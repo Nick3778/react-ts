@@ -34,6 +34,7 @@ export function Feedback(value: Feedback) {
                     </div>
                 </div>
             </div>
+            
         </section>
     );
 }
