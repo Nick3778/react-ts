@@ -1,0 +1,196 @@
+.feedback {
+    max-width: 1600px;
+    width: 100%;
+    padding-inline: 100px;
+
+    @include mobile {
+        padding-inline: 70px;
+    }
+
+    @include mobile-s {
+        padding-inline: 40px;
+    }
+}
+
+.left {
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+
+    @include tablet {
+        width: 150px;
+    }
+
+    @include mobile {
+        width: 120px;
+    }
+
+    @include mobile-s {
+        width: 100px;
+    }
+}
+
+.feedback_container {
+    display: flex;
+    justify-content: center;
+    column-gap: 80px;
+    transition: all 0.3s ease;
+
+    @include tablet {
+        column-gap: 70px;
+    }
+
+    @include mobile {
+        column-gap: 50px;
+    }
+
+    @include mobile-s {
+        column-gap: 40px;
+        flex-direction: column;
+        row-gap: 25px;
+        align-items: center;
+    }
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    max-width: 735px;
+    width: 100%;
+
+    @include mobile-s {
+        align-items: center;
+        
+    }
+}
+
+.rating_container {
+    width: 123px;
+    height: 19px;
+    transition: all 0.3s ease;
+
+    @include tablet {
+        width: 115px;
+        height: 18px;
+    }
+
+    @include mobile {
+        width: 100px;
+        height: 15px;
+    }
+
+    @include mobile-s {
+        width: 85px;
+        height: 12px;
+        
+    }
+}
+
+.title {
+    margin-top: 37px;
+    color: #161c2d;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 34px; /* 141.667% */
+    letter-spacing: -0.5px;
+    transition: all 0.3s ease;
+
+    @include desktop {
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+    @include tablet {
+        font-size: 20px;
+        line-height: 28px;
+        margin-top: 30px;
+    }
+
+    @include mobile {
+        font-size: 18px;
+        line-height: 26px;
+        margin-top: 25px;
+    }
+
+    @include mobile-s {
+        font-size: 16px;
+        line-height: 23px;
+        margin-top: 20px;
+    }
+}
+
+.author_container {
+    margin-top: 15px;
+    display: flex;
+    column-gap: 30px;
+    transition: all 0.3s ease;
+
+    @include mobile {
+        margin-top: 10px;
+    }
+
+    @include mobile-s {
+        align-self: flex-start;
+        
+    }
+}
+
+.author_name {
+    color: #161c2d;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: -0.2px;
+    transition: all 0.3s ease;
+
+    @include desktop {
+        font-size: 16px;
+        line-height: 27px;
+    }
+
+    @include tablet {
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    @include mobile {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    @include mobile-s {
+        font-size: 12px;
+        line-height: 20px;
+    }
+}
+
+.author_profession {
+    color: #161c2d;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 29px; /* 170.588% */
+    letter-spacing: -0.2px;
+    transition: all 0.3s ease;
+
+    @include desktop {
+        font-size: 16px;
+        line-height: 27px;
+    }
+
+    @include tablet {
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    @include mobile {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    @include mobile-s {
+        font-size: 12px;
+        line-height: 20px;
+    }
+}
