@@ -1,5 +1,5 @@
 :root {
-  --button-link-color: #473bf0;
+    --button-link-color: #473bf0;
 }
 
 body {
@@ -12,7 +12,6 @@ body {
     position: relative;
     max-width: 1600px;
     width: 100%;
-    
     height: auto;
     background: #f4f7fa;
     z-index: 0;
@@ -31,9 +30,45 @@ body {
     position: absolute;
     content: "";
     z-index: -1;
-    top: 0;
-    left: 0;
+    top: 0px;
+    left: 0px;
     background-image: url("/src/assets/images/hero/BG.svg");
-    background-position: center;
+    background-position: top left;
+    background-size: cover;
     background-repeat: no-repeat;
+}
+
+.red_text {
+    margin-top: 133px;
+    color: #f64b4b;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.625px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+
+    @include desktop {
+        font-size: 12px;
+        letter-spacing: 1.5px;
+    }
+
+    @include tablet {
+        font-size: 10px;
+        letter-spacing: 1.5px;
+        margin-top: 50px;
+    }
+
+    @include mobile {
+        font-size: 9px;
+        letter-spacing: 1.3px;
+        margin-top: 50px;
+    }
+
+    @include mobile-s {
+        font-size: 8px;
+        letter-spacing: 1.1px;
+        margin-top: 50px;
+    }
 }

@@ -7,9 +7,7 @@ function Hero() {
         <section className={styles.hero}>
             <div className={styles.container}>
                 <div className={styles.left}>
-                    <span className={styles.red_text}>
-                        Let’s shift your business
-                    </span>
+                    <span className="red_text">Let’s shift your business</span>
                     <h1 className={styles.title}>
                         Shift your business fast with Shade Pro.
                     </h1>
