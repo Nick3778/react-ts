@@ -1,8 +1,8 @@
 .hero {
-  max-width: 1600px;
   width: 100%;
-  padding-inline: 100px;
+  max-width: 1600px;
   transition: all 0.3s ease;
+  padding-inline: 100px;
 
   @include mobile {
     padding-inline: 70px;
@@ -26,13 +26,13 @@
 
   @include tablet {
     flex-direction: column-reverse;
-    align-items: center;
     justify-content: flex-end;
+    align-items: center;
   }
 
   @include mobile {
-    min-height: initial;
     max-width: 540px;
+    min-height: initial;
   }
 }
 
@@ -51,88 +51,89 @@
   }
 
   @include mobile {
-    max-width: 540px;
     width: 100%;
+    max-width: 540px;
   }
 }
 
 .title {
   margin-top: 25px;
-  color: #161c2d;
   font-size: 60px;
-  font-style: normal;
   font-weight: 700;
+  font-style: normal;
   line-height: 65px; /* 108.333% */
   letter-spacing: -2px;
+  color: #161c2d;
   transition: all 0.3s ease;
 
   @include desktop {
+    margin-top: 20px;
     font-size: 52px;
     line-height: 58px;
-    margin-top: 20px;
   }
 
   @include tablet {
+    margin-top: 15px;
     font-size: 50px;
     line-height: 55px;
-    margin-top: 15px;
   }
 
   @include mobile {
+    margin-top: 12px;
     font-size: 42px;
     line-height: 46px;
-    margin-top: 12px;
   }
 
   @include mobile-s {
+    margin-top: 10px;
     font-size: 36px;
     line-height: 40px;
-    margin-top: 10px;
   }
 }
+
 .subtitle {
   margin-top: 25px;
   margin-bottom: 35px;
-  color: #161c2d;
   font-size: 19px;
-  font-style: normal;
   font-weight: 400;
+  font-style: normal;
   line-height: 32px; /* 168.421% */
   letter-spacing: -0.2px;
+  color: #161c2d;
   transition: all 0.3s ease;
 
   @include desktop {
-    font-size: 17px;
-    line-height: 28px;
     margin-top: 20px;
     margin-bottom: 30px;
+    font-size: 17px;
+    line-height: 28px;
   }
 
   @include tablet {
-    font-size: 15px;
-    line-height: 25px;
     margin-top: 15px;
     margin-bottom: 25px;
+    font-size: 15px;
+    line-height: 25px;
   }
 
   @include mobile {
-    font-size: 12px;
-    line-height: 22px;
     margin-top: 12px;
     margin-bottom: 20px;
+    font-size: 12px;
+    line-height: 22px;
   }
 
   @include mobile {
-    font-size: 10px;
-    line-height: 18px;
     margin-top: 10px;
     margin-bottom: 15px;
+    font-size: 10px;
+    line-height: 18px;
   }
 }
 
 .right {
-  flex-shrink: 0;
   display: flex;
+  flex-shrink: 0;
   width: 463px;
   transition: all 0.3s ease;
 
@@ -140,7 +141,7 @@
     width: 400px;
   }
 
-  @media (max-width: 1150px) {
+  @media (width <= 1150px) {
     width: 370px;
   }
 

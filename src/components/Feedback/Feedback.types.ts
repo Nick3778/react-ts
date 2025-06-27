@@ -1,4 +1,4 @@
-export type Feedback = {
+export type FeedbackProps = {
   imageURL: string;
   ratingImage: string;
   text: string;

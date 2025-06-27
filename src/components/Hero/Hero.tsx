@@ -1,8 +1,8 @@
 import styles from "./Hero.module.scss";
-import LinkButton from "../LinkButton/LinkButton";
+import { LinkButton } from "../LinkButton/LinkButton";
 import logo from "../../assets/images/hero/girl.png";
 
-function Hero() {
+export const Hero = () => {
   return (
     <section className={styles.hero}>
       <div className={styles.container}>
@@ -21,6 +21,6 @@ function Hero() {
       </div>
     </section>
   );
-}
+};
 
 export default Hero;

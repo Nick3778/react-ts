@@ -69,7 +69,7 @@ p {
    Внешний отступ вниз для параграфа без атрибута class,
    который расположен не последним среди своих соседних элементов
   */
-p:where(:not([class]):not(:last-child)) {
+p:where(:not([class], :last-child)) {
   margin-bottom: var(--paragraphMarginBottom);
 }
 
@@ -99,6 +99,7 @@ html {
      (когда, например, нужно будет "прижать" футер к низу сайта)
     */
   height: 100%;
+
   /**
      Убираем скачок интерфейса по горизонтали
      при появлении / исчезновении скроллбара
@@ -120,6 +121,7 @@ body {
      (когда, например, нужно будет "прижать" футер к низу сайта)
     */
   min-height: 100%;
+
   /**
      Унифицированный интерлиньяж
     */
@@ -146,14 +148,17 @@ label {
    (за исключением тех, у которых уже указан
    атрибут fill со значением 'none' или начинается с 'url')
   */
+
 /* :where([fill]:not([fill="none"], [fill^="url"])) {
     fill: currentColor;
 } */
+
 /*
    Приводим к единому цвету svg-элементы
    (за исключением тех, у которых уже указан
    атрибут stroke со значением 'none')
   */
+
 /* :where([stroke]:not([stroke="none"], [stroke^="url"])) {
     stroke: currentColor;
 } */
@@ -169,8 +174,8 @@ svg * {
    Приведение рамок таблиц в классический 'collapse' вид
   */
 :where(table) {
+  border-color: currentcolor;
   border-collapse: collapse;
-  border-color: currentColor;
 }
 
 /**
@@ -181,28 +186,27 @@ svg * {
   *,
   ::before,
   ::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
   }
 }
 
-/*убираем подчеркивание ссылки, меняем цвет*/
+/* убираем подчеркивание ссылки, меняем цвет */
 a {
   text-decoration: none;
-  color: currentColor;
+  color: currentcolor;
   cursor: pointer;
 }
 
 button {
-  border: 0;
-  padding: 0;
   margin: 0;
+  padding: 0;
+  border: 0;
 }
 
 button:active {
+  box-shadow: 0 1px 2px rgb(0 0 0 / 10%);
   transform: scale(0.99);
-
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }

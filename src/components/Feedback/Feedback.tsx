@@ -1,33 +1,24 @@
-import styles from "./Feedback.module.scss";
+import s from "./Feedback.module.scss";
+import { dataFeedback as value } from "../../data/feedbackData";
 
-export type Feedback = {
-  imageURL: string;
-  ratingImage: string;
-  text: string;
-  name: string;
-  profession: string;
-  altAvatar: string;
-  altRating: string;
-};
-
-export function Feedback(value: Feedback) {
+export const Feedback = () => {
   return (
-    <section className={styles.feedback}>
-      <div className={styles.feedback_container}>
-        <div className={styles.left}>
+    <section className={s.feedback}>
+      <div className={s.feedback_container}>
+        <div className={s.left}>
           <img src={value.imageURL} alt={value.altAvatar} />
         </div>
-        <div className={styles.right}>
-          <div className={styles.rating_container}>
-            <img className={styles.rating} src={value.ratingImage} alt={value.altRating} />
+        <div className={s.right}>
+          <div className={s.rating_container}>
+            <img className={s.rating} src={value.ratingImage} alt={value.altRating} />
           </div>
-          <h4 className={styles.title}>{value.text}</h4>
-          <div className={styles.author_container}>
-            <span className={styles.author_name}>{value.name}</span>
-            <span className={styles.author_profession}>{value.profession}</span>
+          <h4 className={s.title}>{value.text}</h4>
+          <div className={s.author_container}>
+            <span className={s.author_name}>{value.name}</span>
+            <span className={s.author_profession}>{value.profession}</span>
           </div>
         </div>
       </div>
     </section>
   );
-}
+};

@@ -1,7 +1,7 @@
 import styles from "./Header.module.scss";
-import LinkButton from "../LinkButton/LinkButton";
+import { LinkButton } from "../LinkButton/LinkButton";
 
-function Header() {
+export const Header = () => {
   return (
     <div className={styles.header_container}>
       <header className={styles.header}>
@@ -41,6 +41,4 @@ function Header() {
       </header>
     </div>
   );
-}
-
-export default Header;
+};

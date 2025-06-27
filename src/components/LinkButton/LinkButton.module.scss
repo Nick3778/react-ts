@@ -1,44 +1,41 @@
 .button {
-  border-radius: 8px;
-  background: #473bf0;
   display: flex;
-  width: 209px;
-  height: 50px;
   justify-content: center;
   align-items: center;
-
-  color: #fff;
-  text-align: center;
+  width: 209px;
+  height: 50px;
   font-size: 17px;
-  font-style: normal;
   font-weight: 700;
+  font-style: normal;
   line-height: normal;
   letter-spacing: -0.5px;
-
+  text-align: center;
+  color: #fff;
+  background: #473bf0;
+  border-radius: 8px;
   transition: all 0.3s ease;
 
   @include desktop {
-    font-size: 16px;
     width: 200px;
     height: 45px;
+    font-size: 16px;
   }
 
   @include tablet {
-    font-size: 13px;
     width: 150px;
     height: 40px;
+    font-size: 13px;
   }
 
   @include mobile {
-    font-size: 11px;
     width: 120px;
     height: 35px;
+    font-size: 11px;
   }
 
   @include mobile-s {
-    font-size: 10px;
     width: 100px;
-
+    font-size: 10px;
     padding-inline: 2px;
   }
 
@@ -47,11 +44,11 @@
   }
 
   &:active {
+    box-shadow: inset 0 2px 4px rgb(0 0 0 / 20%); // внутренняя тень для эффекта "вдавленности"
     transform: scale(0.99); // небольшое уменьшение размера
-    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2); // внутренняя тень для эффекта "вдавленности"
   }
 
   &:focus-visible {
-    box-shadow: 0 0 0 3px rgba(71, 59, 240, 0.3); // подсветка при фокусе для доступности
+    box-shadow: 0 0 0 3px rgb(71 59 240 / 30%); // подсветка при фокусе для доступности
   }
 }

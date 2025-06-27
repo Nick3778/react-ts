@@ -1,9 +1,9 @@
 .services {
-  max-width: 1600px;
   width: 100%;
-  padding-inline: 100px;
-  transition: all 0.3s ease;
+  max-width: 1600px;
   padding-bottom: 100px;
+  transition: all 0.3s ease;
+  padding-inline: 100px;
 
   @include mobile {
     padding-inline: 70px;
@@ -22,13 +22,13 @@
 
 .title {
   margin-top: 25px;
-  color: #161c2d;
   font-size: 36px;
-  font-style: normal;
   font-weight: 700;
+  font-style: normal;
   line-height: 48px;
   letter-spacing: -1.2px;
   text-align: center;
+  color: #161c2d;
   transition: all 0.3s ease;
 
   @include desktop {
@@ -53,14 +53,14 @@
 }
 
 .cards_container {
-  margin-top: 80px;
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
-  column-gap: 31px;
+  justify-content: center;
+  margin-top: 80px;
   transition: all 0.3s ease;
+  column-gap: 31px;
 
-  @media (max-width: 1330px) {
+  @media (width <= 1330px) {
     column-gap: 24px;
     row-gap: 24px;
   }

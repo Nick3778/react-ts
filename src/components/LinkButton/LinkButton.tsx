@@ -1,11 +1,18 @@
-import styles from "./LinkButton.module.scss";
+import s from "./LinkButton.module.scss";
+import React, { type AnchorHTMLAttributes } from "react";
 
-function LinkButton() {
+type LinkButtonProps = AnchorHTMLAttributes<HTMLAnchorElement> & {
+  children?: React.ReactNode;
+};
+
+export const LinkButton = ({
+  className = "",
+  children = "Get started",
+  ...restProps
+}: LinkButtonProps) => {
   return (
-    <a className={styles.button} href="/" role="button">
-      Get started a project
+    <a className={`${s.button} ${className}`} role="button" {...restProps}>
+      {children}
     </a>
   );
-}
-
-export default LinkButton;
+};

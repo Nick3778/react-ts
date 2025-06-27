@@ -8,6 +8,8 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
+    "lint:css": "stylelint '**/*.{css,scss}'",           
+    "lint:css:fix": "stylelint '**/*.{css,scss}' --fix", 
     "format": "prettier --write .",
     "check-format": "prettier --check .",
     "format-and-lint": "npm run format && npm run lint:js:fix && npm run lint:css:fix && npm run lint"

@@ -1,6 +1,6 @@
 .feedback {
-  max-width: 1600px;
   width: 100%;
+  max-width: 1600px;
   padding-inline: 100px;
 
   @include mobile {
@@ -13,10 +13,11 @@
 }
 
 .left {
-  flex-shrink: 0;
-  transition: all 0.3s ease;
   display: flex;
   align-items: center;
+  flex-shrink: 0;
+  transition: all 0.3s ease;
+
   @include tablet {
     width: 150px;
   }
@@ -56,8 +57,8 @@
 .right {
   display: flex;
   flex-direction: column;
-  max-width: 735px;
   width: 100%;
+  max-width: 735px;
 
   @include mobile-s {
     align-items: center;
@@ -87,12 +88,12 @@
 
 .title {
   margin-top: 37px;
-  color: #161c2d;
   font-size: 24px;
-  font-style: normal;
   font-weight: 700;
+  font-style: normal;
   line-height: 34px; /* 141.667% */
   letter-spacing: -0.5px;
+  color: #161c2d;
   transition: all 0.3s ease;
 
   @include desktop {
@@ -101,29 +102,29 @@
   }
 
   @include tablet {
+    margin-top: 30px;
     font-size: 20px;
     line-height: 28px;
-    margin-top: 30px;
   }
 
   @include mobile {
+    margin-top: 25px;
     font-size: 18px;
     line-height: 26px;
-    margin-top: 25px;
   }
 
   @include mobile-s {
+    margin-top: 20px;
     font-size: 16px;
     line-height: 23px;
-    margin-top: 20px;
   }
 }
 
 .author_container {
-  margin-top: 15px;
   display: flex;
-  column-gap: 30px;
+  margin-top: 15px;
   transition: all 0.3s ease;
+  column-gap: 30px;
 
   @include mobile {
     margin-top: 10px;
@@ -135,12 +136,12 @@
 }
 
 .author_name {
-  color: #161c2d;
   font-size: 17px;
-  font-style: normal;
   font-weight: 700;
+  font-style: normal;
   line-height: 29px;
   letter-spacing: -0.2px;
+  color: #161c2d;
   transition: all 0.3s ease;
 
   @include desktop {
@@ -165,12 +166,12 @@
 }
 
 .author_profession {
-  color: #161c2d;
   font-size: 17px;
-  font-style: normal;
   font-weight: 400;
+  font-style: normal;
   line-height: 29px; /* 170.588% */
   letter-spacing: -0.2px;
+  color: #161c2d;
   transition: all 0.3s ease;
 
   @include desktop {
@@ -195,16 +196,15 @@
 }
 
 .feedback_container::before {
-  content: "";
-  max-width: 1108px;
-  width: 100%;
-  height: 10px;
-  background-color: red;
   position: absolute;
   bottom: -120px; // Располагаем линию под контейнером
+  width: 100%;
+  max-width: 1108px;
   height: 2px; // Толщина линии
+  background-color: red;
   background-color: #ccc;
   transition: all 0.3s ease;
+  content: "";
 
   @include desktop {
     bottom: -110px;
