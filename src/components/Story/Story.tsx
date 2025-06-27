@@ -1,7 +1,9 @@
 import s from "./Story.module.scss";
 import { storyData as data } from "../../data/storyData";
+import { useMediaQuery } from "react-responsive";
 
 export const Story = () => {
+  const deleteEl = useMediaQuery({ maxWidth: 950 });
   return (
     <section className={s.root}>
       <div className={s.container}>
@@ -18,9 +20,11 @@ export const Story = () => {
               <div className={s.mid_foto}>
                 <img src={data.img2} alt={data.alt2} />
               </div>
-              <div className={s.last_foto}>
-                <img src={data.img3} alt={data.alt3} />
-              </div>
+              {!deleteEl && (
+                <div className={s.last_foto}>
+                  <img src={data.img3} alt={data.alt3} />
+                </div>
+              )}
             </div>
 
             <div className={s.description}>

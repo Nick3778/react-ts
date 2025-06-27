@@ -77,6 +77,12 @@
   @include tablet {
     margin-top: 70px;
   }
+  @include mobile {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 45px;
+    margin-top: 50px;
+  }
 }
 
 .content_left_foto {
@@ -95,6 +101,9 @@
   @include tablet {
     width: 270px;
   }
+  @include mobile {
+    width: 230px;
+  }
 }
 
 .content_right {
@@ -105,14 +114,16 @@
 .two_fotos {
   display: flex;
   column-gap: 95px;
-
+  transition: all 0.3s ease;
   @media (max-width: 1330px) {
     column-gap: 80px;
   }
   @include desktop {
     column-gap: 70px;
   }
-  
+  @include mobile {
+    justify-content: center;
+  }
 }
 
 .mid_foto {
@@ -132,13 +143,16 @@
   @include tablet {
     width: 200px;
   }
+  @include mobile {
+    margin-top: 0;
+  }
 }
 
 .last_foto {
   margin-top: 46px;
   width: 160px;
   flex-shrink: 0;
-
+  transition: all 0.3s ease;
   @media (max-width: 1330px) {
     width: 150px;
   }
@@ -164,7 +178,7 @@
   font-weight: 400;
   line-height: 29px; /* 170.588% */
   letter-spacing: -0.2px;
-
+  transition: all 0.3s ease;
   @include desktop {
     font-size: 15px;
     line-height: 22px;
@@ -178,6 +192,7 @@
   @include mobile {
     font-size: 10px;
     line-height: 18px;
+    margin-top: 25px;
   }
 
   @include mobile {
