@@ -1,0 +1,187 @@
+//950px
+.root {
+  max-width: 1600px;
+  width: 100%;
+  padding-top: 130px;
+  transition: all 0.3s ease;
+  padding-inline: 100px;
+  padding-bottom: 100px;
+  display: flex;
+  justify-content: center;
+
+  @include mobile {
+    padding-inline: 70px;
+  }
+
+  @include mobile-s {
+    padding-inline: 40px;
+  }
+}
+
+.container {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.text_container {
+  align-self: flex-start;
+}
+
+.title {
+  margin-top: 40px;
+  font-size: 36px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 48px;
+  letter-spacing: -1.2px;
+  color: #161c2d;
+  transition: all 0.3s ease;
+  max-width: 515px;
+
+  @include desktop {
+    font-size: 32px;
+    line-height: 42px;
+  }
+
+  @include tablet {
+    font-size: 30px;
+    line-height: 38px;
+  }
+
+  @include mobile {
+    font-size: 28px;
+    line-height: 34px;
+  }
+
+  @include mobile-s {
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+
+.content {
+  display: inline-flex; //
+
+  column-gap: 96px;
+  margin-top: 120px;
+  transition: all 0.3s ease;
+
+  @media (max-width: 1330px) {
+    column-gap: 80px;
+  }
+
+  @include desktop {
+    column-gap: 75px;
+  }
+  @include tablet {
+    margin-top: 70px;
+  }
+}
+
+.content_left_foto {
+  flex-shrink: 0;
+  width: 445px;
+  transition: all 0.3s ease;
+  @media (max-width: 1330px) {
+    width: 410px;
+  }
+  @include desktop {
+    width: 360px;
+  }
+  @media (max-width: 1250px) {
+    width: 300px;
+  }
+  @include tablet {
+    width: 270px;
+  }
+}
+
+.content_right {
+  display: flex; //
+  flex-direction: column;
+}
+
+.two_fotos {
+  display: flex;
+  column-gap: 95px;
+
+  @media (max-width: 1330px) {
+    column-gap: 80px;
+  }
+  @include desktop {
+    column-gap: 70px;
+  }
+  
+}
+
+.mid_foto {
+  margin-top: -70px;
+  width: 318px;
+  flex-shrink: 0;
+  transition: all 0.3s ease;
+  @media (max-width: 1330px) {
+    width: 300px;
+  }
+  @include desktop {
+    width: 260px;
+  }
+  @media (max-width: 1250px) {
+    width: 230px;
+  }
+  @include tablet {
+    width: 200px;
+  }
+}
+
+.last_foto {
+  margin-top: 46px;
+  width: 160px;
+  flex-shrink: 0;
+
+  @media (max-width: 1330px) {
+    width: 150px;
+  }
+  @include desktop {
+    width: 140px;
+  }
+  @media (max-width: 1250px) {
+    width: 120px;
+  }
+  @include tablet {
+    width: 110px;
+  }
+}
+
+.description {
+  max-width: 490px;
+  display: flex;
+  flex-grow: 1;
+  align-items: end;
+  color: #161c2d;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29px; /* 170.588% */
+  letter-spacing: -0.2px;
+
+  @include desktop {
+    font-size: 15px;
+    line-height: 22px;
+  }
+
+  @include tablet {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  @include mobile {
+    font-size: 10px;
+    line-height: 18px;
+  }
+
+  @include mobile {
+    font-size: 10px;
+    line-height: 18px;
+  }
+}
